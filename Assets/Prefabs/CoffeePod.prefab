@@ -617,6 +617,7 @@ MonoBehaviour:
   placeableTags:
   - Espresso Handle
   holderTransform: {fileID: 2891316368437234487}
+  hasHandle: 0
 --- !u!65 &4092439127607342725
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -809,6 +810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32e19abfd833c9e478d6c76f8b28069c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  handleTransform: {fileID: 2891316368437234487}
 --- !u!1 &6880204487890406103
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 8066160525845015176}
   - component: {fileID: 7580342948160278043}
   - component: {fileID: 6138442670210826321}
+  - component: {fileID: 3559968642919244876}
   - component: {fileID: 5307533132876215037}
-  m_Layer: 0
-  m_Name: Tashbin
+  m_Layer: 6
+  m_Name: Trashbin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,6 +85,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3559968642919244876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5031656369181697668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e67f46f6384dbbf4a922f19e91f1e29e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &5307533132876215037
 BoxCollider:
   m_ObjectHideFlags: 0
