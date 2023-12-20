@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Espresso Handle
+  - Cup
   layers:
   - Default
   - TransparentFX
