@@ -10087,15 +10087,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4773269076627805910, guid: 47fafe8ba479d8c488006cf27ce01783, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.513
+      value: -6.271
       objectReference: {fileID: 0}
     - target: {fileID: 4773269076627805910, guid: 47fafe8ba479d8c488006cf27ce01783, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.358
+      value: 1.755
       objectReference: {fileID: 0}
     - target: {fileID: 4773269076627805910, guid: 47fafe8ba479d8c488006cf27ce01783, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.529
+      value: 6.556
       objectReference: {fileID: 0}
     - target: {fileID: 4773269076627805910, guid: 47fafe8ba479d8c488006cf27ce01783, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10123,6 +10123,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4773269076627805910, guid: 47fafe8ba479d8c488006cf27ce01783, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288021468045510718, guid: 47fafe8ba479d8c488006cf27ce01783, type: 3}
+      propertyPath: CollisionModule.enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
