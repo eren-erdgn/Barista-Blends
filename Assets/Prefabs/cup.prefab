@@ -225,6 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b885b899a652f0142a2c8e06a41c9e1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  drinkName: 
   maxFillAmount: 4
   ingredients:
   - 
@@ -236,6 +237,15 @@ MonoBehaviour:
   - {fileID: 6580537901988944226}
   - {fileID: 3208347854555878740}
   - {fileID: 908470816577280746}
+  espressoColor: {r: 0.2264151, g: 0.12981132, b: 0, a: 1}
+  milkColor: {r: 1, g: 1, b: 1, a: 1}
+  waterColor: {r: 0, g: 0.1924739, b: 0.49056602, a: 0.56078434}
+  latte: {r: 0.5660378, g: 0.41414297, b: 0.26966894, a: 1}
+  americano: {r: 0.3018868, g: 0.1584739, b: 0.009967966, a: 1}
+  cappuccino: {r: 0.6981132, g: 0.5749664, b: 0.39186543, a: 1}
+  filterCoffee: {r: 0.2924528, g: 0.17206627, b: 0, a: 1}
+  flatWhite: {r: 0.6226415, g: 0.45094004, b: 0.23789605, a: 1}
+  redEye: {r: 0.254717, g: 0.16048354, b: 0, a: 1}
 --- !u!23 &3620498002214521412
 MeshRenderer:
   m_ObjectHideFlags: 0

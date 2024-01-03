@@ -1,6 +1,4 @@
-using UnityEngine;
-
-namespace PlaceHolder.EspressoMachine
+namespace PlaceHolder
 {
     public class CupHolder : PlaceHolder
     {

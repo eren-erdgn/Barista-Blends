@@ -483,7 +483,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5598708111117123808}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000104308114, y: -0.00000008940696, z: -0.7070918, w: 0.7071218}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0.6, y: 0.6, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
@@ -491,7 +491,7 @@ Transform:
   - {fileID: 4196409915187243368}
   - {fileID: 1651996852914157941}
   m_Father: {fileID: 5843957823149964719}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.998}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!33 &4929554280271472877
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -617,7 +617,6 @@ MonoBehaviour:
   placeableTags:
   - Espresso Handle
   holderTransform: {fileID: 2891316368437234487}
-  hasHandle: 0
 --- !u!65 &4092439127607342725
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -811,6 +810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   handleTransform: {fileID: 2891316368437234487}
+  handleRotationPoint: {fileID: 4728636932565254917}
 --- !u!1 &6880204487890406103
 GameObject:
   m_ObjectHideFlags: 0
