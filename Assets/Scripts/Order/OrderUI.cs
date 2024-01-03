@@ -11,6 +11,7 @@ namespace Order
         [SerializeField] private TextMeshProUGUI orderText;
         [SerializeField] private TextMeshProUGUI timerText;
         [SerializeField] private TextMeshProUGUI scoreText;
+        private int _totalScore = 0;
 
         private void OnEnable()
         {
@@ -29,7 +30,8 @@ namespace Order
 
         private void UpdateScoreText(int score)
         {
-            scoreText.text = "Score: \n" + score;
+            _totalScore += score;
+            scoreText.text = "Score: \n" + _totalScore;
         }
 
         private void UpdateOrderText(string order)

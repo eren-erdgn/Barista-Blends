@@ -13,10 +13,12 @@ namespace PlaceHolder.FilterCoffee
         [SerializeField] private ParticleSystem filterCoffeeParticle;
         private Quaternion _originalRotation;
         private Cup _cup;
+        private AudioSource _audioSource;
 
         private void Start()
         {
             _originalRotation = valveRotationPoint.rotation;
+            _audioSource = GetComponent<AudioSource>();
         }
 
         public bool Interact(Interactor interactor)
@@ -37,6 +39,7 @@ namespace PlaceHolder.FilterCoffee
             RotateHandle();
             filterCoffeeParticle.Play();
             Invoke("StopParticleAfterDelay", 2f);
+            _audioSource.Play();
             Invoke("FillCupAfterDelay", 2f);
             return true;
 
@@ -51,6 +54,7 @@ namespace PlaceHolder.FilterCoffee
             }
             _cup.FillCup("FilterCoffee");
             Debug.Log("Cup is filled up with FilterCoffee");
+            _audioSource.Stop();
         }
 
         private void StopParticleAfterDelay()

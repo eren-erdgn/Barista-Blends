@@ -14,10 +14,12 @@ namespace PlaceHolder.MilkAndFoam
         [SerializeField] private ParticleSystem milkParticle;
         private Quaternion _originalRotation;
         private Cup _cup;
+        private AudioSource _audioSource;
     
         private void Start()
         {
             _originalRotation = valveRotationPoint.rotation;
+            _audioSource = GetComponent<AudioSource>();
         }
     
         public bool Interact(Interactor interactor)
@@ -38,6 +40,7 @@ namespace PlaceHolder.MilkAndFoam
             RotateHandle();
             milkParticle.Play();
             Invoke("StopParticleAfterDelay", 1f);
+            _audioSource.Play();
             Invoke("FillCupAfterDelay", 1f);
             return true;
     
@@ -52,6 +55,7 @@ namespace PlaceHolder.MilkAndFoam
             }
             _cup.FillCup("Milk");
             Debug.Log("Cup is filled up with Milk");
+            _audioSource.Stop();
         }
     
         private void StopParticleAfterDelay()

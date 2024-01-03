@@ -14,8 +14,13 @@ namespace PlaceHolder.EspressoMachine
         [SerializeField] private ParticleSystem espressoParticle;
         private Cup _cup;
         private EspressoHandle _espressoHandle;
+        private AudioSource _audioSource;
 
-        
+        private void Start()
+        {
+            _audioSource = GetComponent<AudioSource>();
+        }
+
 
         public bool Interact(Interactor interactor)
         {
@@ -42,6 +47,7 @@ namespace PlaceHolder.EspressoMachine
             espressoParticle.Play();
             buttonTransform.position = new Vector3(buttonTransform.position.x, buttonTransform.position.y, buttonTransform.position.z + 0.06f);
             Invoke("StopParticleAfterDelay", 3f);
+            _audioSource.Play();
             Invoke("FillCupAfterDelay", 3f);
             _espressoHandle.IsFullWithCoffee = false;
             return true;
@@ -58,6 +64,7 @@ namespace PlaceHolder.EspressoMachine
             }
             _cup.FillCup("Espresso");
             Debug.Log("espresso is filled up with espresso");
+            _audioSource.Stop();
         }
 
         private void StopParticleAfterDelay()

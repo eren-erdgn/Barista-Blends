@@ -11,10 +11,12 @@ namespace PlaceHolder.CoffeePod
         [SerializeField] private Transform handleTransform;
         [SerializeField] private Transform handleRotationPoint;
         private Quaternion _originalRotation;
+        private AudioSource _audioSource;
 
         private void Start()
         {
             _originalRotation = handleRotationPoint.rotation;
+            _audioSource = GetComponent<AudioSource>();
         }
         public bool Interact(Interactor interactor)
         {
@@ -38,12 +40,14 @@ namespace PlaceHolder.CoffeePod
         }
         private void RotateHandle()
         {
+            _audioSource.Play();
             // Rotate the handle by 90 degrees around the Y axis over 1 second
             handleRotationPoint.DORotate(new Vector3(-70, 0, -90), 1f)
                 .OnComplete(() =>
                 {
                     // After the rotation is complete, rotate it back to the original rotation over 1 second
                     handleRotationPoint.DORotateQuaternion(_originalRotation, 1f);
+                    _audioSource.Stop();
                 });
         }
     }
